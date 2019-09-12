@@ -1,0 +1,16 @@
+from tkinter import *
+
+fenetre = Tk()
+champ_label = Label(fenetre, text="Bienvenue sur Chaud/Froid Battle Royale !")
+champ_label.pack()
+champ_label = Label(fenetre, text="Donnez-nous vos retours :")
+champ_label.pack()
+var_texte = StringVar()
+ligne_texte = Entry(fenetre, textvariable=var_texte, width=30)
+ligne_texte.pack()
+var_case = IntVar()
+case = Checkbutton(fenetre, text="J'achete !", variable=var_case)
+case.pack()
+bouton_quitter = Button(fenetre, text="quitter", fg="red", command=fenetre.quit)
+bouton_quitter.pack()
+fenetre.mainloop()
